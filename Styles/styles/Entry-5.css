@@ -1,0 +1,53 @@
+.title {
+    font-size: 150px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(198, 60, 45)153, 110, 0);
+    padding-bottom: 5px;
+    font-family: Times New Roman;
+}
+
+.title-1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Times New Roman;
+}
+
+h2 {
+    width: 380px;
+    animation-name: text;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-color: rgb(255, 210, 85);
+}
+
+#Element-1 {
+    animation-timing-function: ease;
+}
+
+#Element-2 {
+    animation-timing-function: linear;
+}
+
+#Element-3{
+    animation-timing-function: ease-in;
+}
+
+#Element-4 {
+    animation-timing-function: ease-out;
+}
+
+#Element-5 {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes text {
+    from {
+        margin-left: 60%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
