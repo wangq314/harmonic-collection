@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+title{
+  font-family: 'Schoolbell';
+}
+
+h1 {
+  font-family: 'Schoolbell';
+  font-size: 80px;
+  line-height: 0.5;
+  text-align: center;
+  color: #8fbf25;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+
+}
+
+h2{
+  font-family: 'Schoolbell';
+  font-size: 120px;
+  line-height: 0.5;
+  text-align: center;
+  color: #e83c70;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+ul {
+  font-family:  'Schoolbell';
+  font-size: 30px;
+  text-decoration: none;
+  text-align: justify;
+  color: black;
+  word-spacing: 45px;
+}

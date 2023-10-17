@@ -4,18 +4,20 @@
     font-weight: bold;
     color: rgb(198, 60, 45)153, 110, 0);
     padding-bottom: 5px;
-    font-family: Times New Roman;
+    font-family: 'Schoolbell';
 }
 
 .title-1 {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    font-family: Times New Roman;
+    font-family: 'Schoolbell';
 }
 
+
 h2 {
-    width: 380px;
+    font-family: 'Schoolbell';
+    width: 1500px;
     animation-name: text;
     animation-duration: 4s;
     animation-iteration-count: 1;
@@ -42,9 +44,16 @@ h2 {
     animation-timing-function: ease-in-out;
 }
 
+
+a{
+    font-size: 50px;
+    color: rgb(228, 51, 6);
+    font-family: 'Schoolbell';
+  }
+
 @keyframes text {
     from {
-        margin-left: 60%;
+        margin-left: 120%;
     }
 
     to {

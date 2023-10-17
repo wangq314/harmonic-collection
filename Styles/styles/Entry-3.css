@@ -1,0 +1,65 @@
+h1 {
+    font-size: 150px;
+    color: darkcyan;
+    font-family: 'Schoolbell';
+    line-height: 0.5;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 150px;
+    color: darkcyan;
+    font-family: 'Schoolbell';
+    line-height: 0.3;
+    text-align: center;
+    text-align: center;
+  }
+
+  p {
+    color:rgb(27, 152, 27);
+  }
+
+
+  body {
+    font-family: 'Schoolbell';
+    background-color: rgb(255, 255, 255);
+   
+  }
+
+
+.font-1 {
+ font-family: 'Schoolbell';
+  font-size: 70px;
+  text-align: center;
+}
+
+.font-2 {
+  font-family: 'Schoolbell';
+  font-size: 70px;
+  text-align: center;
+}
+
+#steps {
+  font-family: 'Schoolbell';
+  padding-left: 70px;
+  text-align: center;
+}
+
+li {
+  font-family: 'Schoolbell';
+  padding-left: 70px;
+  text-align: center;
+}
+
+ul {
+  border: 10px solid rgb(231, 255, 246);
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+a{
+  font-size: 50px;
+  color: rgb(228, 51, 6);
+  font-family: 'Schoolbell';
+}
