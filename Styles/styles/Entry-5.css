@@ -60,3 +60,7 @@ a{
         margin-left: 0%;
     }
 }
+
+html{
+    cursor: nw-resize;
+    }

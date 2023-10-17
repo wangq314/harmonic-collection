@@ -41,3 +41,7 @@ ul {
   color: black;
   word-spacing: 45px;
 }
+
+html{
+cursor: nw-resize;
+}

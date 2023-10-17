@@ -63,3 +63,7 @@ a{
   color: rgb(228, 51, 6);
   font-family: 'Schoolbell';
 }
+
+html{
+  cursor: nw-resize;
+  }

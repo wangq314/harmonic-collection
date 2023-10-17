@@ -68,4 +68,6 @@ h1 {
     font-family: 'Schoolbell';
     font-size: 50px;
   }
-  
+  html{
+    cursor: nw-resize;
+    }
