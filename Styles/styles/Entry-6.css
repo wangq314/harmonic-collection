@@ -1,0 +1,25 @@
+p{
+    font-size: 550%;
+    font-family: 'Bacon',sans-serif;
+    line-height: 0.5;
+    text-indent: 60px;
+}
+
+button{
+    background-color:transparent ;
+    border:none;
+    padding-left: 0%;
+    width: 33%;
+    align-items: center;
+}
+
+h1{
+    font-size: 100%;
+}
+
+h2{
+    font-size: 100%;
+}
+
+
+
