@@ -1,91 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Harmonic Collection</title>
     <link href="Styles/styles/Entry-6.css" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/bacon" rel="stylesheet">
-    <style>#text{display: none};</style>
-  </head>
-  <body>
+    <style>
+        /* CSS to initially hide the text */
+        .hidden-text {
+            display: none;
+        }
+    </style>
+</head>
+<body>
     <p>TOMATO STEW</p>
 
-    <button type="button"><img id="image" src="./IMG/1.png" alt="" style="width: 80%; height: auto;"></button>
-    <h1 id="text">Food</h1>
+    <button type="button">
+        <img id="image1" src="./IMG/1.png" alt="" style="width: 80%; height: auto;">
+    </button>
+    <h1 id="text1" class="hidden-text">Food</h1>
+
+    <button type="button">
+        <img id="image2" src="./IMG/2.png" alt="" style="width: 70%; height: auto;">
+    </button>
+    <h2 id="text2" class="hidden-text">Foo2d</h2>
+
+    <button type="button">
+        <img id="image3" src="./IMG/3.png" alt="" style="width: 70%; height: auto;">
+    </button>
+    <h3 id="text3" class="hidden-text">Foo3d</h3>
+
+    <button type="button">
+        <img id="image4" src="./IMG/4.png" alt="" style="width: 80%; height: auto;">
+    </button>
+    <h4 id="text4" class="hidden-text">Foo4d</h4>
+
+    <button type="button">
+        <img id="image5" src="./IMG/5.png" alt="" style="width: 70%; height: auto;">
+    </button>
+    <h5 id="text5" class="hidden-text">Foo5d</h5>
+
+    <button type="button">
+        <img id="image6" src="./IMG/6.png" alt="" style="width: 70%; height: auto;">
+    </button>
+    <h6 id="text6" class="hidden-text">Foo6d</h6>
+
     <script>
-      document.getElementById('image').addEventListener('click', function() {
-          var image = document.getElementById('image');
-          var text = document.getElementById('text');
-          if (image.style.display !== 'none') {
-              image.style.display = 'none';
-              text.style.display = 'block';
-          }
-      });
+        function toggleImageAndText(imageId, textId) {
+            var image = document.getElementById(imageId);
+            var text = document.getElementById(textId);
+
+            if (image.style.display !== 'none') {
+                image.style.display = 'none';
+                text.style.display = 'block';
+            }
+        }
+
+        document.getElementById('image1').addEventListener('click', function() {
+            toggleImageAndText('image1', 'text1');
+        });
+
+        document.getElementById('image2').addEventListener('click', function() {
+            toggleImageAndText('image2', 'text2');
+        });
+
+        document.getElementById('image3').addEventListener('click', function() {
+            toggleImageAndText('image3', 'text3');
+        });
+
+        document.getElementById('image4').addEventListener('click', function() {
+            toggleImageAndText('image4', 'text4');
+        });
+
+        document.getElementById('image5').addEventListener('click', function() {
+            toggleImageAndText('image5', 'text5');
+        });
+
+        document.getElementById('image6').addEventListener('click', function() {
+            toggleImageAndText('image6', 'text6');
+        });
     </script>
-
-    <button type="button"><img id="image" src="./IMG/2.png" alt="" style="width: 70%; height: auto;"></button>
-    <h2 id="text">Foo2d</h2>
-    <script>
-      document.getElementById('image').addEventListener('click', function() {
-          var image = document.getElementById('image');
-          var text = document.getElementById('text');
-          if (image.style.display !== 'none') {
-              image.style.display = 'none';
-              text.style.display = 'block';
-          }
-      });
-  </script>
-
-    <button type="button"><img id="image" src="./IMG/3.png" alt="" style="width: 70%; height: auto;"></button>
-    <h3 id="text">Foo2d</h3>
-    <script>
-      document.getElementById('image').addEventListener('click', function() {
-          var image = document.getElementById('image');
-          var text = document.getElementById('text');
-          if (image.style.display !== 'none') {
-              image.style.display = 'none';
-              text.style.display = 'block';
-          }
-      });
-  </script>
-
-    <button type="button"><img id="image" src="./IMG/4.png" alt="" style="width: 80%; height: auto;"></button>
-    <h4 id="text">Foo2d</h4>
-    <script>
-      document.getElementById('image').addEventListener('click', function() {
-          var image = document.getElementById('image');
-          var text = document.getElementById('text');
-          if (image.style.display !== 'none') {
-              image.style.display = 'none';
-              text.style.display = 'block';
-          }
-      });
-  </script>
-
-    <button type="button"><img id="image" src="./IMG/5.png" alt="" style="width: 70%; height: auto;"></button>
-    <h5 id="text">Foo2d</h5>
-    <script>
-      document.getElementById('image').addEventListener('click', function() {
-          var image = document.getElementById('image');
-          var text = document.getElementById('text');
-          if (image.style.display !== 'none') {
-              image.style.display = 'none';
-              text.style.display = 'block';
-          }
-      });
-  </script>
-
-    <button type="button"><img id="image" src="./IMG/6.png" alt="" style="width: 70%; height: auto;"></button>
-    <h6 id="text">Foo2d</h6>
-    <script>
-      document.getElementById('image').addEventListener('click', function() {
-          var image = document.getElementById('image');
-          var text = document.getElementById('text');
-          if (image.style.display !== 'none') {
-              image.style.display = 'none';
-              text.style.display = 'block';
-          }
-      });
-  </script>
-
-  </body>
+</body>
 </html>
