@@ -1,6 +1,6 @@
 p{
     font-size: 550%;
-    font-family: 'Bacon',sans-serif;
+    font-family: "Codystar", sans-serif;
     line-height: 0.5;
     text-indent: 60px;
 }
@@ -36,8 +36,8 @@ h5{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
     }
 
     .div1 { grid-area: 1 / 1 / 2 / 2; }
