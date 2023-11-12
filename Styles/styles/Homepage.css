@@ -91,7 +91,7 @@ a{
 
 .recipes-wrapper {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 3%;
   flex-direction: row;
   width: 80%;
@@ -99,5 +99,5 @@ a{
 
 
 html{
-cursor: nw-resize;
+cursor: default;
 }
