@@ -1,6 +1,177 @@
 html{
     background-color:  #e12800;
-}
-a{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    left:30%;
+    top:5%;
+    display: inline;
+    position: absolute
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    left:30%;
+    top:28%;
+    display: inline;
+    position: absolute
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    right:30%;
+    top:28%;
+    display: inline;
+    position: absolute;
+    text-align: right;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    left:30%;
+    top:90%;
+    display: inline;
+    position: absolute
+}
+
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 90%;
+    right: 30%;
+    flex-direction: row;
+    width: 332px;
+    text-align: right;
+}
+
+
+h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 100%;
+    right: 30%;
+    flex-direction: row;
+    width: 332px;
+    text-align: right;
+}
+
+
+h7{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 118%;
+    right: 30%;
+    flex-direction: row;
+    width: 332px;
+    text-align: right;
+}
+
+
+h8{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 135%;
+    right: 30%;
+    flex-direction: row;
+    width: 332px;
+    text-align: right;
+} */
+
+.nutrition-facts {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgba(255, 255, 255, 0.485);
+    border: dotted white;
+    width: 700px;
+    position: absolute;
+    left:28%;
+    top:5%
+}
+
+.nutrition-header {
+    font-weight: bold;
+    font-size: 60px;
+    display: block;
+    margin-left: 60px;
+    margin-top: 80px
+}
+
+.nutrition-header-secondline{
+    font-weight: bold;
+    font-size: 60px;
+    display: block;
+    margin-left: 60px;
+    border-style: none none solid none;
+    border-width: 15px;
+    padding-bottom: 15px;
+    margin-right:60px
+}
+
+.ingredients {
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.single-ingredient {
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-style: none none solid none;
+}
+.ingredient-amount {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.steps{
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+ .steps-number{
+    display: flex;
+    padding-top: 25px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ .single-steps{
+    display:inline-block;
+
+    text-align: right;
+    margin-inline-start: 200px;
+    margin-right:60px;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ .single-steps1{
+    display:inline-block;
+    text-align: right;
+    margin-inline-start: 200px;
+    margin-right:60px;
+    margin-bottom: 80px;
+    font-size: 20px;
+    font-weight: bold;
+ }
