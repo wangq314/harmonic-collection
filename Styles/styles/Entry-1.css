@@ -96,14 +96,14 @@ h8{
     text-align: right;
 } */
 
+
 .nutrition-facts {
     font-family: Arial, Helvetica, sans-serif;
     background-color:rgba(255, 255, 255, 0.485);
-    border: dotted white;
     width: 700px;
     position: absolute;
     left:28%;
-    top:5%
+    top:43%
 }
 
 .nutrition-header {
