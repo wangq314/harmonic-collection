@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ascending/Descending Line</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  let y;
+  let direction = 1;
+
+  function setup() {
+    createCanvas(720, 400);
+    stroke(255);
+    noLoop();
+    y = height / 2; 
+  }
+
+  function draw() {
+    background(192, 209, 46);
+    strokeWeight(15)
+    y = y + (15 * direction); 
+    if (direction === 1 && y > height) {
+      y = 0; 
+    } else if (direction === -1 && y < 0) {
+      y = height; 
+    }
+    line(0, y, width, y);
+  }
+
+  function mousePressed() {
+    direction = mouseY > height / 2 ? 1 : -1;
+    redraw();
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js Circle Example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  function setup() {
+    createCanvas(820, 700);
+    noStroke();
+    ellipseMode(CENTER);
+  }
+
+  function draw() {
+    background(230);
+
+    let r1 = map(mouseX, 0, width, 0, height);
+    let r2 = height - r1;
+
+    fill(0, 0, 255, r1);
+    ellipse(width / 2, height / 2, r1, r1);
+
+    fill(0, 0, 255, r2);
+    ellipse(width / 2, height / 2, r2, r2);
+  }
+</script>
+
+</body>
+</html>
