@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./Styles/styles/Entry-5-V2.css">
+     <style>
+    .title {
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      position: absolute;
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+
+    .title:hover {
+      color: #FFBB00;
+    }
+  </style>
+</head>
+
+<body>
+    <a href="Homepage.html"><span class="title">MARINATED</br>BEEF</span></a>
+<div class="content-wrapper">
+
+    <div id="carousel-wrapper">
+        <div id="menu">
+            <div id="current-option">
+                <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+            </div>
+            <button id="previous-option"></button>
+            <button id="next-option"></button>
+        </div>
+        <div id="recipe"></div>
+    </div>
+</div>
+    <script>
+        const text1_options = [
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+        ];
+        const text2_options = [
+            "15mins",
+            "60mins",
+            "2mins",
+            "150mins",
+            "120mins",
+            "12h"
+        ];
+        const color_options = ["#FFBB00", "#B12000", "#FF5912", "#BA2D00","#FF8A00","BF462C"];
+        const recipes = [
+            "2 beef tendons<br/>1 star anise<br/>2 cinnamon<br/>1coriander<br/>1/2 spoon peppercorns<br/>1/2 spoon scallions<br/>2 slice ginger<br/>1 spoon rock sugar.<br/>2 spoon dark soy sauce <br/>2 spoon  soy sauce<br/>2 spoon  soybean paste<",
+            "Bought the tendon cold water with a spoonful of salt soaked for an hour",
+            "From the salted water after the tendon in cold water to boil skimming blood foam",
+            "Pour in the sauce and marinade and bring to a boil over high heat, then turn to medium heat and simmer for 2.5 hours",
+            "Turn off the heat and simmer for two hours, then serve when cool.",
+            "Refrigerate overnight, it is good for cutting, thin and flavorful.",
+        ];
+        var i = 0;
+        const currentOptionText1 = document.getElementById("current-option-text1");
+        const currentOptionText2 = document.getElementById("current-option-text2");
+        const currentRecipeContent = document.getElementById("recipe");
+        const carousel = document.getElementById("carousel-wrapper");
+        const mainMenu = document.getElementById("menu");
+        const optionPrevious = document.getElementById("previous-option");
+        const optionNext = document.getElementById("next-option");
+
+        currentOptionText1.innerText = text1_options[i];
+        currentOptionText2.innerText = text2_options[i];
+        currentRecipeContent.innerHTML = recipes[i];
+        mainMenu.style.background = color_options[i];
+
+        optionNext.onclick = function () {
+            i = i + 1;
+            i = i % text1_options.length;
+            currentOptionText1.dataset.nextText = text1_options[i];
+
+            currentOptionText2.dataset.nextText = text2_options[i];
+
+            mainMenu.style.background = color_options[i];
+            carousel.classList.add("anim-next");
+
+            setTimeout(() => {
+                currentRecipeContent.innerHTML = recipes[i];
+            }, 455);
+
+            setTimeout(() => {
+                currentOptionText1.innerHTML = text1_options[i];
+                currentOptionText2.innerHTML = text2_options[i];
+                carousel.classList.remove("anim-next");
+            }, 650);
+        };
+
+        optionPrevious.onclick = function () {
+            if (i === 0) {
+                i = text1_options.length;
+            }
+            i = i - 1;
+            currentOptionText1.dataset.previousText = text1_options[i];
+
+            currentOptionText2.dataset.previousText = text2_options[i];
+
+            mainMenu.style.background = color_options[i];
+            carousel.classList.add("anim-previous");
+
+            setTimeout(() => {
+                currentRecipeContent.innerHTML = recipes[i];
+            }, 455);
+
+            setTimeout(() => {
+                currentOptionText1.innerHTML = text1_options[i];
+                currentOptionText2.innerHTML = text2_options[i];
+                carousel.classList.remove("anim-previous");
+            }, 650);
+        };
+    </script>
+    
+</body>
+
+</html>

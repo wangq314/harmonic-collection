@@ -2,6 +2,11 @@ html{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  margin:0;
+  display: flex;
+  flex-direction: row;
+}
 
 .steps-number{
   font-size: 30px;
@@ -9,8 +14,6 @@ html{
   margin-left: 50px;
   margin-top: 10px;
 }
-
-
 
 .step{
   font-size: 20px;
@@ -22,12 +25,18 @@ html{
 }
 
 
+.image-wrapper {
+  display: inline-block;
+  width: 50%;
+}
+
 .parent {
-  display: grid;
-  grid-template-columns: 1fr 2fr repeat(3, 1fr);
+  display: inline-grid;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 0.8fr 2fr repeat(4, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  width:50%;
   }
   
   .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -43,30 +52,37 @@ html{
   .div11 { grid-area: 6 / 2 / 7 / 3; }
 
 .image1{
+  position: relative;
   height:200px;
   width: auto;
-  margin-left: 70%;
-  margin-top: 10px;
+  left: 30px;
+  top: 50px;
+  transform: rotate(0.25turn);
 }
 
 .image2{
+  position: relative;
   height:200px;
   width: auto;
 }
 .image3{
+  position: relative;
   height:200px;
   width: auto;
 }
 .image4{
+  position: relative;
   height:200px;
   width: auto;
 }
 .image5{
+  position: relative;
   height:200px;
   width: auto;
 }
 
 .image6{
+  position: relative;
   height:200px;
   width: auto;
 }
