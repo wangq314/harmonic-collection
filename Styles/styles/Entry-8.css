@@ -18,6 +18,7 @@ html {
     color: #e12800;
     text-align: center;
     text-shadow: 3px 3px #B12000;
+    margin-top: 20px;
 }
 
 
@@ -37,7 +38,7 @@ html {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 60px;
+    grid-row-gap: 0px;
     width: 1920px;
     z-index: 20;
 }
