@@ -9,19 +9,19 @@ html{
   }
   
   .steps-number{
-    font-size: 30px;
+    font-size: 3.0550vh;
     font-weight: bolder;
-    margin-left: 50px;
-    margin-top: 10px;
+    margin-left: 5.0916vh;
+    margin-top: 1.0183vh;
   }
   
   .step{
-    font-size: 20px;
-    margin-left: 20px;
+    font-size: 2.0367vh;
+    margin-left: 2.0367vh;
   }
   
   .steps1{
-    margin-top: 13px;
+    margin-top: 1.3238vh;
   }
   
   
@@ -53,51 +53,51 @@ html{
   
   .image1{
     position: relative;
-    left: 290px;
-    top: 5px;
+    left: 29.5316vh;
+    top: 0.5092vh;
     transform: rotate(1.125turn);
-    width: 200px;
+    width: 20.3666vh;
     height: auto;
   }
   
   .image2{
     position: relative;
-    left: 150px;
-    top: 30px;
+    left: 15.2749vh;
+    top: 3.0550vh;
     transform: rotate(0.82turn);
-    width: 320px;
+    width: 32.5866vh;
     height: auto;
   }
   .image3{
     position: relative;
-    left: 230px;
-    top:-10px;
+    left: -30vh;
+    top:20.0183vh;
     transform: rotate(-0.01turn);
-    width: 320px;
+    width: 32.5866vh;
     height: auto;
   }
   .image4{
     position: relative;
     height:auto;
-    width: 280px;
-    left: -180px;
-    top:90px;
+    width: 28.5132vh;
+    left: 17vh;
+    top: 8vh;
     transform: rotate(0.05turn);
   }
   .image5{
     position: relative;
     height:auto;
-    width: 200px;
-    left: 370px;
-    top:-30px;
+    width: 20.3666vh;
+    left: 10vh;
+    top:25vh;
     transform: rotate(0.1turn);
   }
   
   .image6{
     position: relative;
     height:auto;
-    width: 320px;
-    left: -50px;
-    top:40px;
+    width: 32.5866vh;
+    left: -28vh;
+    top: 35vh;
     transform: rotate(0.1turn);
   }

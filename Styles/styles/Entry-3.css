@@ -1,5 +1,5 @@
 h1 {
-    font-size: 150px;
+    font-size: 15.2749vh;
     color: darkcyan;
     font-family: 'Schoolbell';
     line-height: 0.5;
@@ -7,7 +7,7 @@ h1 {
   }
   
   h2 {
-    font-size: 150px;
+    font-size: 15.2749vh;
     color: darkcyan;
     font-family: 'Schoolbell';
     line-height: 0.3;
@@ -29,37 +29,37 @@ h1 {
 
 .font-1 {
  font-family: 'Schoolbell';
-  font-size: 70px;
+  font-size: 7.1283vh;
   text-align: center;
 }
 
 .font-2 {
   font-family: 'Schoolbell';
-  font-size: 70px;
+  font-size: 7.1283vh;
   text-align: center;
 }
 
 #steps {
   font-family: 'Schoolbell';
-  padding-left: 70px;
+  padding-left: 7.1283vh;
   text-align: center;
 }
 
 li {
   font-family: 'Schoolbell';
-  padding-left: 70px;
+  padding-left: 7.1283vh;
   text-align: center;
 }
 
 ul {
-  border: 10px solid rgb(231, 255, 246);
-  padding: 30px;
+  border: 1.0183vh solid rgb(231, 255, 246);
+  padding: 3.0550vh;
   text-align: center;
-  font-size: 20px;
+  font-size: 2.0367vh;
 }
 
 a{
-  font-size: 50px;
+  font-size: 5.0916vh;
   color: rgb(228, 51, 6);
   font-family: 'Schoolbell';
 }

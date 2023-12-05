@@ -6,7 +6,7 @@ html{
 .nutrition-facts {
     font-family: Arial, Helvetica, sans-serif;
     background-color:rgb(255, 255, 255);
-    width: 1000px;
+    width: 101.8330vh;
     position: absolute;
     left:20%;
     top:4%
@@ -14,39 +14,39 @@ html{
 
 .nutrition-header {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 6.1100vh;
     display: block;
-    margin-left: 60px;
-    margin-top: 80px
+    margin-left: 6.1100vh;
+    margin-top: 8.1466vh
 }
 
 .nutrition-header-secondline{
     font-weight: bold;
-    font-size: 60px;
+    font-size: 6.1100vh;
     display: block;
-    margin-left: 60px;
+    margin-left: 6.1100vh;
     border-style: none none solid none;
-    border-width: 15px;
-    padding-bottom: 15px;
-    margin-right:60px
+    border-width: 1.5275vh;
+    padding-bottom: 1.5275vh;
+    margin-right:6.1100vh
 }
 
 .ingredients {
     font-weight: bold;
-    font-size: 30px;
-    margin-right: 60px;
-    margin-left: 60px;
+    font-size: 3.0550vh;
+    margin-right: 6.1100vh;
+    margin-left: 6.1100vh;
 }
 
 .single-ingredient {
     display: flex;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 1.0183vh;
+    padding-top: 1.0183vh;
     border-style: none none solid none;
 }
 
 .egg{
-    margin-top: 40px;
+    margin-top: 4.0733vh;
 }
 
 .ingredient-amount {
@@ -55,15 +55,15 @@ html{
 }
 
 .steps{
-    font-size: 30px;
-    margin-bottom: 80px;
+    font-size: 3.0550vh;
+    margin-bottom: 8.1466vh;
 }
 
  .steps-number{
     display: flex;
-    padding-top: 25px;
-    margin-left: 60px;
-    font-size: 20px;
+    padding-top: 2.5458vh;
+    margin-left: 6.1100vh;
+    font-size: 2.0367vh;
     font-weight: bold;
  }
 
@@ -71,18 +71,18 @@ html{
     display:inline-block;
 
     text-align: right;
-    margin-inline-start: 200px;
-    margin-right:60px;
-    font-size: 20px;
+    margin-inline-start: 20.3666vh;
+    margin-right:6.1100vh;
+    font-size: 2.0367vh;
     font-weight: bold;
  }
 
  .single-steps1{
     display:inline-block;
     text-align: right;
-    margin-inline-start: 200px;
-    margin-right:60px;
-    margin-bottom: 80px;
-    font-size: 20px;
+    margin-inline-start: 20.3666vh;
+    margin-right:6.1100vh;
+    margin-bottom: 8.1466vh;
+    font-size: 2.0367vh;
     font-weight: bold;
  }
