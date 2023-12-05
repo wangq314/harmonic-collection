@@ -1,5 +1,5 @@
 html {
-    background-color: #E12800;
+    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -8,15 +8,16 @@ html {
     margin-left: 25px;
     font-size: 30px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: #000000;
     line-height: normal;
 }
 
 .step-number {
     font-size: 120px;
     font-weight: bold;
-    color: #FFBB00;
+    color: #e12800;
     text-align: center;
+    text-shadow: 3px 3px #B12000;
 }
 
 
@@ -24,11 +25,11 @@ html {
     font-size: 20px;
     margin-left: 50px;
     margin-right: 50px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .border {
-    border-right: solid #B12000;
+    border-right: solid #B8B8B8;
 }
 
 .parent {

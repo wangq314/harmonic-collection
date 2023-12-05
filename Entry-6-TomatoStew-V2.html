@@ -22,7 +22,7 @@
       color: #FFBB00;
     }
   </style>
-    
+
 </head>
 
 <body>
@@ -53,14 +53,57 @@
     <div class="div11 step steps1">Serve the stew in a bowl and top with a good amount of parsley.</div>
   </div>
 
-<div class="image-wrapper">
-  <img src="./IMG/1.png" class="image1">
-  <img src="./IMG/2.png" class="image2">
-  <img src="./IMG/3.png" class="image3">
-  <img src="./IMG/4.png" class="image4">
-  <img src="./IMG/5.png" class="image5">
-  <img src="./IMG/6.png" class="image6">
-</div>
+  <div class="image-wrapper">
+    <img id="t-1" src="./IMG/1.png" class="image1" onclick="handleClick(this)">
+    <img id="t-2" src="./IMG/2.png" class="image2" onclick="handleClick(this)">
+    <img id="t-3" src="./IMG/3.png" class="image3" onclick="handleClick(this)">
+    <img id="t-4" src="./IMG/4.png" class="image4" onclick="handleClick(this)">
+    <img id="t-5" src="./IMG/5.png" class="image5" onclick="handleClick(this)">
+    <img id="t-6" src="./IMG/6.png" class="image6" onclick="handleClick(this)">
+  </div>
+
+  <script>
+    const audio = new Audio('./Audio/squish.wav');
+
+    const tomatoes = {
+      "t-1": true,
+      "t-2": true,
+      "t-3": true,
+      "t-4": true,
+      "t-5": true,
+      "t-6": true,
+    }
+
+    function handleClick(element) {
+      audio.play();
+      tomatoes[element.id] = false;
+
+      const isEmpty = !Object.keys(tomatoes).some(id => tomatoes[id])
+      console.log(isEmpty)
+      for (const [key, value] of Object.entries(tomatoes)) {
+        console.log(`${key}: ${value}`);
+
+        const tomatoe = document.getElementById(key);
+        if (!value) {
+          tomatoe.style.visibility = "hidden";
+        }
+
+        if (isEmpty) {
+          setTimeout(() => {
+            Object.keys(tomatoes).forEach(id => {
+              const t = document.getElementById(id);
+              t.style.visibility = "visible";
+              tomatoes[t.id] = true;
+            })
+          }, 1000)
+        }
+      }
+      
+
+
+    }
+
+  </script>
 </body>
 
 </html>

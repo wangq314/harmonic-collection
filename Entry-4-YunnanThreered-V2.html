@@ -1,0 +1,103 @@
+<html>
+
+<head>
+  <title>Harmonic Collection</title>
+  <link href="Styles/styles/Entry-4-v2.css" rel="stylesheet">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="./Entry-6-v6.js" defer>
+    </script> -->
+  <style>
+    .title {
+      font-size: 30px;
+      color: #E12800;
+      font-weight: bold;
+      margin-left: 30px;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .title:hover {
+      color: #FFBB00;
+    }
+  </style>
+    
+</head>
+
+<body>
+  <div class="parent">
+    <div class="div1"><a href="Homepage.html"><span class="title">YUNNAN</br>THREE RED</span></a></div>
+    <div class="div2 steps-number">00</div>
+    <div class="div3 steps-number">01</div>
+    <div class="div4 steps-number">02</div>
+    <div class="div5 steps-number">03</div>
+    <div class="div6 steps-number">04</div>
+    <div class="div7 step steps1">200g ground pork</br>
+        1 Tomato</br>
+        2 Bell Pepper</br>
+        2 Red bell pepper</br>
+        1/3 Garlic</br>
+        1/3 spoon grated Ginger</br>
+        1 spoon Soy sauce</br>
+        1 spoon Oyster sauce</br>
+        1 spoon Cooking wine</div>
+    <div class="div8 step steps1">Chop the tomatoes, green and red peppers, garlic and ginger (3:1), and set aside.</div>
+    <div class="div9 step steps1">Stir fry the ginger and garlic in hot oil, then pour in the pork and stir fry until browned, then add soy sauce and cooking wine to taste, then set aside</div>
+    <div class="div10 step steps1">Stir fry the tomatoes in the remaining oil! Stir fry the tomatoes to get out the juice, and then pour in the green and red bell peppers and stir fry together.</div>
+    <div class="div11 step steps1">Pour in the pork and stir-fry, season with a spoonful of soy sauce and a spoonful of oyster sauce.</div>
+  </div>
+
+<div class="image-wrapper">
+  <img id="t-1" src="IMG/4-1.png" class="image1" onclick="handleClick(this)">
+  <img id="t-2" src="IMG/4-2.png" class="image2" onclick="handleClick(this)">
+  <img id="t-3" src="IMG/4-3.png" class="image3" onclick="handleClick(this)">
+  <img id="t-4" src="IMG/4-4.png" class="image4" onclick="handleClick(this)">
+  <img id="t-5" src="IMG/4-5.png" class="image5" onclick="handleClick(this)">
+  <img id="t-6" src="IMG/4-6.png" class="image6" onclick="handleClick(this)">
+</div>
+
+<script>
+  const audio = new Audio('./Audio/pluck.wav');
+
+  const tomatoes = {
+    "t-1": true,
+    "t-2": true,
+    "t-3": true,
+    "t-4": true,
+    "t-5": true,
+    "t-6": true,
+  }
+
+  function handleClick(element) {
+    audio.play();
+    tomatoes[element.id] = false;
+
+    const isEmpty = !Object.keys(tomatoes).some(id => tomatoes[id])
+    console.log(isEmpty)
+    for (const [key, value] of Object.entries(tomatoes)) {
+      console.log(`${key}: ${value}`);
+
+      const tomatoe = document.getElementById(key);
+      if (!value) {
+        tomatoe.style.visibility = "hidden";
+      }
+
+      if (isEmpty) {
+        setTimeout(() => {
+          Object.keys(tomatoes).forEach(id => {
+            const t = document.getElementById(id);
+            t.style.visibility = "visible";
+            tomatoes[t.id] = true;
+          })
+        }, 1000)
+      }
+    }
+    
+
+
+  }
+
+</script>
+</body>
+
+</html>

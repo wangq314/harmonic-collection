@@ -55,34 +55,44 @@ body {
   position: relative;
   height:200px;
   width: auto;
-  left: 30px;
-  top: 50px;
-  transform: rotate(0.25turn);
+  left: 350px;
+  top: 0px;
 }
 
 .image2{
   position: relative;
   height:200px;
   width: auto;
+  left: -20px;
+  top: 150px;
+  /* transform: rotate(0.25turn); */
 }
 .image3{
   position: relative;
   height:200px;
   width: auto;
+  left: -40px;
+  top: 520px;
 }
 .image4{
   position: relative;
   height:200px;
   width: auto;
+  left:400px;
+  top: 60px;
 }
 .image5{
   position: relative;
   height:200px;
   width: auto;
+  left:-70px;
+  top: 400px;
 }
 
 .image6{
   position: relative;
   height:200px;
   width: auto;
+  left: -230px;
+  top: 160px;
 }
